@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Canales extends Model
+class Curso extends Model
 {
     //
 }
