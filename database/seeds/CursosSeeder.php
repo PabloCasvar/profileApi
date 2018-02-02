@@ -11,6 +11,8 @@ class CursosSeeder extends Seeder
      */
     public function run()
     {
-        //
+        DB::table('cursos')->insert([
+            'tipo'=>
+        ]);
     }
 }

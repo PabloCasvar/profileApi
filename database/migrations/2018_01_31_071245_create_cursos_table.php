@@ -14,6 +14,7 @@ class CreateCursosTable extends Migration
     public function up()
     {
         Schema::create('cursos', function (Blueprint $table) {
+            //todo: CAmbiar tipo de curso a un catálogo
             $table->increments('id');
             $table->string('tipo');
             $table->string('nombre', 50);

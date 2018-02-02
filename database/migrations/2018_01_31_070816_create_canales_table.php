@@ -15,6 +15,9 @@ class CreateCanalesTable extends Migration
     {
         Schema::create('canales', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('nombre', 50);
+            $table->string('url_youtube', 150);
+            $table->string('descripcion', 250);
             $table->timestamps();
         });
     }
