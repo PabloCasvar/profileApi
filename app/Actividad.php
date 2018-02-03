@@ -11,6 +11,6 @@ class Actividad extends Model
 
     //Returns the parent Trabajo 
     public function trabajo(){
-        $this->belongsTo('App\Trabajo');
+        return $this->belongsTo('App\Trabajo');
     }
 }

@@ -18,3 +18,5 @@ Route::get('/', function () {
 Route::get('/profile/canales', 'CanalController@index');
 
 Route::get('/profile/cursos', 'CursoController@index');
+
+Route::get('/profile/trabajos', 'TrabajoController@index');

@@ -9,7 +9,7 @@ class Trabajo extends Model
     //
     //Get the Actividades 
     public function actividades(){
-        $this->hasMany('App\Actividades');
+        return $this->hasMany('App\Actividad');
     }
 
 }
