@@ -19,5 +19,9 @@ class ActividadesSeeder extends Seeder
             'trabajo_id'=>1, 
             'cuerpo_actividad'=>'Hacer cosas asombrosas'
         ]);
+        DB::table('actividades')->insert([
+            'trabajo_id'=>2,
+            'cuerpo_actividad'=>'Hacer el trabajo de otro'
+        ]);
     }
 }

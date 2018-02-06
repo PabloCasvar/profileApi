@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateTrabajosTable extends Migration
+class CreateFotografiasTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,13 +13,9 @@ class CreateTrabajosTable extends Migration
      */
     public function up()
     {
-        Schema::create('trabajos', function (Blueprint $table) {
+        Schema::create('fotografias', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('empresa', 100);
-            $table->string('puesto', 100); 
-            $table->text('descripcion');    
-            $table->string('img_url', 150)->default('');
-            $table->string('periodo', 25);
+            $table->string('img_url'. 100);
             $table->timestamps();
         });
     }
@@ -31,6 +27,6 @@ class CreateTrabajosTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('trabajos');
+        Schema::dropIfExists('fotografias');
     }
 }

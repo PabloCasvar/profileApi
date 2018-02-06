@@ -11,6 +11,11 @@ class EscuelasSeeder extends Seeder
      */
     public function run()
     {
-        //
+        DB::table('escuelas')->insert([
+            'institucion' => 'Instituto Politécnico Nacional', 
+            'campus'=> 'Centro de Investigación en Computación', 
+            'titulo' => 'Maestro en Ciencias en Ingeniería de Cómputo',
+            'periodo'=> 'Ene/14 - Jul/16'
+        ]);
     }
 }

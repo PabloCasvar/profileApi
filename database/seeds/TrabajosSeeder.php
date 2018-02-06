@@ -17,5 +17,11 @@ class TrabajosSeeder extends Seeder
             'descripcion'=>'',
             'periodo'=>'Dic/16 - Actual'
         ]);
+        DB::table('trabajos')->insert([
+            'empresa'=>'RGOV de México',
+            'puesto'=>'Diseñadpr Web',
+            'descripcion'=>'',
+            'periodo'=>'Sep/16 - Dic/16'
+        ]);
     }
 }

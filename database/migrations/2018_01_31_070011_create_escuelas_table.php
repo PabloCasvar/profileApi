@@ -15,8 +15,10 @@ class CreateEscuelasTable extends Migration
     {
         Schema::create('escuelas', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('escuela', 100);
-            $table->string('titulo');
+            $table->string('institucion', 100);
+            $table->string('campus', 100);
+            $table->string('titulo', 50);
+            $table->string('img_url', 150)->default('');
             $table->string('periodo', 25);
             $table->timestamps();
         });

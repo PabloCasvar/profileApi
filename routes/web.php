@@ -15,8 +15,18 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/profile/canales', 'CanalController@index');
+Route::get('/api/perfil/trabajos', 'TrabajoController@index');
 
-Route::get('/profile/cursos', 'CursoController@index');
+Route::get('/api/perfil/trabajos/actividades', 'TrabajoController@get_actividades');
 
-Route::get('/profile/trabajos', 'TrabajoController@index');
+Route::get('/api/perfil/escuelas', 'EscuelaController@index');
+
+Route::get('/api/perfil/cursos', 'CursoController@index');
+
+Route::get('/api/perfil/canales', 'CanalController@index');
+
+Route::get('/api/perfil/fotografias', 'FotografiaController@index');
+
+
+
+
